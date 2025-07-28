@@ -22,7 +22,7 @@ a {
 }
 /* 전체 레이아웃 */
 .wrap {
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(248, 83, 83); */
 }
 /* 상단 */
 header {
@@ -64,7 +64,7 @@ header > .inner {
 h1{
   font-size: 30px;
   padding-top: 7px;
-  
+
 }
 
 .gnb{
@@ -74,6 +74,7 @@ h1{
   text-align: center;
   justify-content: space-between;
   gap: 20px;
+  padding-left: 260px;
 }
 
 .gnb > li{
@@ -84,12 +85,134 @@ h1{
   width: 100%;
   line-height: 60px;
   display: block;
+  font-weight: bold;
 }
 
 .gnb > li > a:hover{
   background-color: #333;
   color: #fff;
 }
+
 /* 메인(비주얼) */
+figure {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 120px);
+  background-color: #333;
+  padding-top: 250px;
+}
+
+figure video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0.7;
+}
+
+figure .inner h2{
+  font-size: 100px;
+  line-height: 1px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 60px;
+}
+
+figure .inner p{
+  font-size: 16px;
+  line-height: 20px;
+  color: #888;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 50px;
+}
+
+figure .inner a{
+  width: 400px;
+  border: 1px solid #bbb;
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  display: block;
+  text-align: center;
+}
+
+figure .inner a:hover{
+  background-color: #bbb;
+  color: #333;
+}
+
 /* 뉴스 */
+section{
+  padding: 200px 0;
+}
+
+section > .inner > h2{
+text-align: center;
+padding-bottom: 15px;
+}
+
+.news-wrap ul{
+  display: flex;
+  gap: 20px;
+}
+
+.news-wrap ul li{
+  width: calc(100% / 4);
+}
+
+.pic{
+  height: 120px;
+  overflow: hidden;
+}
+
+.pic img{
+  width: 100%;
+}
+
 /* 하단 */
+footer{
+  background-color:#1e1e1e;
+  position: relative;
+  height: 180px;
+}
+
+footer >.inner > h3{
+  color: #888;
+  font-size: 23px
+}
+
+.footer-menu{
+  display: flex;
+ justify-content: flex-start;
+ position: absolute;
+ top:2px;
+ left: 100px;
+ gap: 20px;
+}
+
+.footer-menu > li a{
+  color: #888;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.footer-menu > p{
+    color: #888;
+  font-size: 15px;
+}
+
+.capi1 {
+  color: #888;
+  padding-top: 50px;
+}
+
+.capi2{
+  color: #888;
+  padding-top: 20px;
+}
