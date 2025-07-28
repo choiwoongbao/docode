@@ -12,3 +12,84 @@ a {
   color: #333;
   text-decoration: none;
 }
+
+/* 공통 영역 */
+.inner {
+  position: relative;
+  width: 1180px;
+  margin: auto;
+  /* background-color: red; */
+}
+/* 전체 레이아웃 */
+.wrap {
+  background-color: rgb(255, 255, 255);
+}
+/* 상단 */
+header {
+  width: 100%;
+}
+
+header > .inner {
+  height: 120px;
+  /* background-color: #f1c3c3; */
+}
+
+/* 상단 위 */
+.header-top {
+  height: 60px;
+  /* background-color: rgb(252, 252, 185); */
+}
+
+.util {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-right: 3px;
+  gap: 20px;
+}
+
+.util > li {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 상단 아래 */
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  /* background: lightblue; */
+}
+
+h1{
+  font-size: 30px;
+  padding-top: 7px;
+  
+}
+
+.gnb{
+  width: 800px;
+  /* background-color: aliceblue; */
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.gnb > li{
+  width: calc(100% / 5);
+}
+
+.gnb > li > a{
+  width: 100%;
+  line-height: 60px;
+  display: block;
+}
+
+.gnb > li > a:hover{
+  background-color: #333;
+  color: #fff;
+}
+/* 메인(비주얼) */
+/* 뉴스 */
+/* 하단 */
